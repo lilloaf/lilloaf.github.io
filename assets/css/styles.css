@@ -1,21 +1,28 @@
-h1 header{
-    font-size: 40vw;
+h1{
+    font-size: xx-large;
     color: #ffffff;
-    width: 60%;
+    margin: 0px;
 }
-p header{
-    font-size: 5vw;
+p{
+    font-size: medium;
     color: #ffffff;
-    width: 60%;
-}
-header {
-    text-align: left;
-    margin-left: 40px;
-    margin-bottom: 50px;
-    background-color: #333333;
 }
 body{
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     margin: 20px;
     background-color: #333333;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.avatar{
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+    padding-left: 40px;
+}
+.header{
+    width: 152%;
 }
