@@ -1,28 +1,76 @@
-h1{
-    font-size: xx-large;
-    color: #ffffff;
-    margin: 0px;
-}
-p{
-    font-size: medium;
-    color: #ffffff;
-}
-body{
-    font-family: Helvetica, Arial, sans-serif;
-    margin: 20px;
-    background-color: #333333;
-}
-.container{
-    display: flex;
-    justify-content: space-between;
+body {
     width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
-.avatar{
-    width: 60%;
-    max-width: 100%;
-    height: auto;
-    padding-left: 40px;
+.header-container{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #000000;
 }
-.header{
-    width: 152%;
+.avatar-name {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+.avatar-name img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.header-container h1, a.header-link {
+    color: white;
+    font-family: lato, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-right: 40px;
+}
+.home{
+    background-color: #272727;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+}
+.home h2, p{
+    font-family: lato, sans-serif;
+    margin: 0px;
+    text-align: center;
+}
+.intro{
+    font-size: 3em;
+    letter-spacing: 3px;
+}
+.description{
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    padding-left: 18%;
+    padding-right: 18%;
+}
+.social-links{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+ul{
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
 }
