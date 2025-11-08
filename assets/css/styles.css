@@ -66,13 +66,23 @@ body {
 .social-links{
     display: flex;
     gap: 20px;
+    justify-content: center;
     align-items: center;
+    padding-left: 0px;
+}
+.social-icon{
+    display: block;
+    width: 40px;
+    height: auto;
 }
 ul{
     list-style-type: none;
 }
 li a{
     text-decoration: none;
+}
+#torn_icon{
+    filter: invert(100%);
 }
 @media (max-width: 768px) {
     .nav-links{
