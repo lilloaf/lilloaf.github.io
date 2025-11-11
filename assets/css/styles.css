@@ -48,7 +48,7 @@ body {
     align-items: center;
     justify-content: center;
 }
-.home h2, p{
+h2, h3, p{
     font-family: lato, sans-serif;
     margin: 0px;
     text-align: center;
@@ -83,6 +83,48 @@ li a{
 }
 #torn_icon{
     filter: invert(100%);
+}
+.about{
+    height: 775px;
+    background-color:#000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 10%;
+}
+.about-me-text{
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
+.about-me-info{
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.subsection{
+    padding-bottom: 5%;
+}
+.about-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    justify-content: center;
+    max-width: 40%;
+}
+.skills-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.listed-skill{
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    text-align: center;
 }
 @media (max-width: 768px) {
     .nav-links{
