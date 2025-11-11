@@ -48,7 +48,7 @@ body {
     align-items: center;
     justify-content: center;
 }
-h2, h3, p{
+h2, h3, p, strong, li{
     font-family: lato, sans-serif;
     margin: 0px;
     text-align: center;
@@ -94,9 +94,14 @@ li a{
     align-items: center;
     padding-left: 10%;
     padding-right: 10%;
-    gap: 10%;
+    gap: 4%;
 }
-.about-me-text{
+.section-title, .subsection-title{
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.about p{
     font-size: 1.2em;
     letter-spacing: 2px;
 }
@@ -106,25 +111,59 @@ li a{
     justify-content: center;
     align-items: center;
 }
-.subsection{
-    padding-bottom: 5%;
-}
 .about-left{
     display: flex;
     flex-direction: column;
     gap: 10%;
     justify-content: center;
-    max-width: 40%;
+    max-width: 50%;
 }
+
 .skills-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+.skill{
+    background: transparent;
+    text-align: center;
+    justify-content: center;
+}
+.skill > strong{
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    color: #f3f3f3;
+    font-size: 1.05em;
+    padding: 5px 8px;
+    background: #5e5e5e;
+    border-radius: 6px;
+    height: 39px;
+}
+.listed-skills{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 12px;
 }
 .listed-skill{
-    font-size: 1.1em;
-    letter-spacing: 1px;
-    text-align: center;
+    background: #4b4b4b;
+    color: #ddd;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 0.95em;
+}
+#objective{
+    padding-bottom:5%;
+}
+.about h2, h3{
+    margin-bottom: 4%;
 }
 @media (max-width: 768px) {
     .nav-links{
