@@ -211,11 +211,50 @@ li a{
     gap: 4%;
     scroll-margin-top: 82px;
 }
+.contact{
+    display: flex;
+    gap: 15px;
+}
+.contact .section-description{
+    margin-bottom: 7px;
+}
+
 @media (max-width: 768px) {
+    * {
+        font-size: 0.8rem;
+    }
+
     .nav-links{
         display: none;
     }
-    .about, .projects{
-        height: 150vh;
+    .home, .about, .projects, .contact{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: fit-content;
+    }
+    .skill > strong{
+        padding: 5px;
+        height: 27px;
+    }
+    .about-me-info{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .about-left{
+        gap: 20px;
+        max-width: 100%;
+    }
+    .home{
+        padding-top: 132px;
+    }
+    .skills-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+    }
+    .about{
+        gap: 25px;
     }
 }
