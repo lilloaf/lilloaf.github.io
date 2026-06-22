@@ -218,9 +218,9 @@ li a{
 }
 .contact{
     display: flex;
-    gap: 15px;
+    gap: 10px;
 }
-.contact .section-description{
+.contact .section-title{
     margin-bottom: 7px;
 }
 .hamburger {
