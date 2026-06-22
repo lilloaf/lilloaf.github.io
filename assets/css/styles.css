@@ -223,7 +223,27 @@ li a{
 .contact .section-description{
     margin-bottom: 7px;
 }
-
+.hamburger {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    margin-right: 24px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.hamburger span{
+    display: block;
+    background-color: #ffffff;
+    width: 100%;
+    height: 3px;
+}
+.navigation {
+    position: relative;
+}
 @media (max-width: 1024px) {
     .description {
         padding-left: 8%;
@@ -258,6 +278,16 @@ li a{
 
     .nav-links{
         display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #000000;
+        padding: 24px 32px;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .nav-links.open {
+        display: flex;
     }
     .home, .about, .projects, .contact{
         padding-top: 50px;
@@ -289,5 +319,8 @@ li a{
     }
     .about{
         gap: 35px;
+    }
+    .hamburger{
+        display: flex;
     }
 }
