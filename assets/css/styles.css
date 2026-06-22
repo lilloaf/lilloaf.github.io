@@ -206,7 +206,7 @@ li a{
 .contact{
     background-color:#000000;
     color: white;
-    min-height: 400px;
+    min-height: 240px;
     display: flex;
     flex-direction: column;
     justify-content: center;
